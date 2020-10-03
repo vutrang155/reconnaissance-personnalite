@@ -1,0 +1,120 @@
+run projet_final.py
+Nombre de lignes : 8675
+Nombre de colonnes : 2
+Nombre de résultats : 16
+Résultats possibles:
+        type    n_occurences    taux
+        -----------------------------
+        ENFJ    190             2.2 %
+        ENFP    675             7.8 %
+        ENTJ    231             2.7 %
+        ENTP    685             7.9 %
+        ESFJ    42              0.5 %
+        ESFP    48              0.6 %
+        ESTJ    39              0.4 %
+        ESTP    89              1.0 %
+        INFJ    1470            16.9 %
+        INFP    1832            21.1 %
+        INTJ    1091            12.6 %
+        INTP    1304            15.0 %
+        ISFJ    166             1.9 %
+        ISFP    271             3.1 %
+        ISTJ    205             2.4 %
+        ISTP    337             3.9 %
+Fig 1 : La répartition des types
+
+￼
+
+
+______________________________________
+Nombre total de mots (un lien http se compte 1) :  10109220
+Nombre moyen de mots :  1165.3279538904899
+Synthèse :
+        type    n_occurences    taux    moyen   total
+        ---------------------------------------------
+        ENFJ    190             2.2 %   1215.8  230995
+        ENFP    675             7.8 %   1202.5  811671
+        ENTJ    231             2.7 %   1169.6  270172
+        ENTP    685             7.9 %   1135.3  777665
+        ESFJ    42              0.5 %   1262.1  53010
+        ESFP    48              0.6 %   969.0   46511
+        ESTJ    39              0.4 %   1162.7  45345
+        ESTP    89              1.0 %   1097.8  97708
+        INFJ    1470            16.9 %  1220.1  1793552
+        INFP    1832            21.1 %  1187.2  2174975
+        INTJ    1091            12.6 %  1129.3  1232021
+        INTP    1304            15.0 %  1135.4  1480556
+        ISFJ    166             1.9 %   1194.2  198241
+        ISFP    271             3.1 %   1107.1  300023
+        ISTJ    205             2.4 %   1132.1  232074
+        ISTP    337             3.9 %   1082.2  364701
+Nombre total de site web : 26825
+Nombre moyen de site web : 3.1
+Nombre sites web moyen par type : 
+        ENFJ    2.4
+        ENFP    2.4
+        ENTJ    2.6
+        ENTP    2.3
+        ESFJ    1.3
+        ESFP    2.8
+        ESTJ    1.7
+        ESTP    3.0
+        INFJ    3.1
+        INFP    3.5
+        INTJ    2.9
+        INTP    3.4
+        ISFJ    3.2
+        ISFP    4.2
+        ISTJ    2.8
+        ISTP    3.7
+Analyzing liste des emojis...
+313 emojis dans Personality Cafe
+Chargement...
+Seperation y... 
+Figure 2 : La répartion apres la séparation
+
+￼
+Figure 3 : Correlation entre les labels
+[[ 1.         -0.04022292  0.06934218 -0.16795556]
+ [-0.04022292  1.          0.08478806 -0.02558472]
+ [ 0.06934218  0.08478806  1.          0.0058152 ]
+ [-0.16795556 -0.02558472  0.0058152   1.        ]]
+
+￼
+SGD Test F1-Score :  0.742945896971266
+        EI : 
+                F1-Score :  0.632716049382716
+                Confusion Matrix : 
+                        [[1292  177]
+                         [  61  205]]
+        SN : 
+                F1-Score :  0.5623342175066314
+                Confusion Matrix : 
+                        [[1464  140]
+                         [  25  106]]
+        TF : 
+                F1-Score :  0.8295454545454546
+                Confusion Matrix : 
+                        [[808 141]
+                         [129 657]]
+        JP : 
+                F1-Score :  0.7448165869218502
+                Confusion Matrix : 
+                        [[948 202]
+                         [118 467]]
+              precision    recall  f1-score   support
+
+           0       0.54      0.77      0.63       266
+           1       0.43      0.81      0.56       131
+           2       0.82      0.84      0.83       786
+           3       0.70      0.80      0.74       585
+
+   micro avg       0.68      0.81      0.74      1768
+   macro avg       0.62      0.80      0.69      1768
+weighted avg       0.71      0.81      0.75      1768
+ samples avg       0.55      0.59      0.56      1768
+
+/home/tranghpvu/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in samples with no predicted labels.
+  'precision', 'predicted', average, warn_for)
+/home/tranghpvu/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1439: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in samples with no true labels.
+  'recall', 'true', average, warn_for)
